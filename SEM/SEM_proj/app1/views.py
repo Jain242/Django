@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Game
+from .models import Game, Author
 from django.http import HttpResponse
 import random
 
@@ -25,3 +25,12 @@ def statistics(request):
         elif game.side == 'reshka':
             stats['reshka'] += 1
     return HttpResponse(f'{stats} ')
+
+
+def create_authors(request):
+    result = []
+    for i in range(10):
+        author = Author(name=f'Name{i}', lastname=f'Lastname{i}', email=f'example{i}@mail.ru', biography=f'Biography{i}', birthday=date.today())
+        author.save()
+        result.append(author.fullname())
+    return HttpResponse(f'{result}')

@@ -13,3 +13,14 @@ class Game(models.Model):
     @staticmethod
     def stat_game(n):
         return Game.objects.all().order_by('-time_res')[:n]
+    
+
+    class Author(models.Model):
+        name = models.CharField(max_length=100)
+        lastname = models.CharField(max_length=100)
+        email = models.EmailField()
+        biography = models.TextField(max_length=1500)
+        birthday = models.DateField(blank=False)
+
+        def fullname(self):
+            return f'{self.name} {self.lastname}'
