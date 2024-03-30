@@ -1,0 +1,20 @@
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Посещена главная страница. IP: 127.0.0.1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+"GET / HTTP/1.1" 200 344
+Посещена главная страница. IP: 127.0.0.1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+"GET / HTTP/1.1" 200 344
+"GET /about HTTP/1.1" 301 0
+Посещена страница 'О себе'. IP: 127.0.0.1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+"GET /about/ HTTP/1.1" 200 320
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
