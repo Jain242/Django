@@ -5,7 +5,7 @@ class Client(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField()
     phone_number = models.CharField(max_length=15)
-    adreess = models.TimeField()
+    address = models.TextField()
     registration_date = models.DateField()
 
     def __str__(self) -> str:
