@@ -7,11 +7,6 @@
     <title>Создать клиента</title>
 </head>
 <body>
-    <h1>Создать клиента</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Создать</button>
-    </form>
+    <h1>Создано {{count}} клиентов</h1>
 </body>
 </html>

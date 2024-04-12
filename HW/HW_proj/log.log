@@ -196,3 +196,1873 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 django.db.utils.OperationalError: no such table: apphw_client
 "POST /create_client/ HTTP/1.1" 500 155268
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 3263
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3314
+"GET /create_client/ HTTP/1.1" 200 1115
+Internal Server Error: /create_client/
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 29, in create_client
+    form.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+"POST /create_client/ HTTP/1.1" 500 155322
+"GET /create_client/ HTTP/1.1" 200 1115
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /create_client/
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 29, in create_client
+    form.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+"POST /create_client/ HTTP/1.1" 500 155550
+"GET /create_client/ HTTP/1.1" 200 1115
+Internal Server Error: /create_client/
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 29, in create_client
+    form.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+"POST /create_client/ HTTP/1.1" 500 155486
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create_client/10
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 31, in create_client
+    return render(request, 'create_client.html', {'count': count})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 475, in parse
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 10
+"GET /create_client/10 HTTP/1.1" 500 125168
+"GET /create_client/10 HTTP/1.1" 200 271
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /create_client/10 HTTP/1.1" 200 271
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create_client/10
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 32, in create_client
+    client.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+"GET /create_client/10 HTTP/1.1" 500 154365
+Internal Server Error: /create_client/10
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 32, in create_client
+    client.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+"GET /create_client/10 HTTP/1.1" 500 154110
+Internal Server Error: /create_client/10
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 32, in create_client
+    client.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+"GET /create_client/10 HTTP/1.1" 500 154263
+Not Found: /
+"GET / HTTP/1.1" 404 3280
+Not Found: /create_client/
+"GET /create_client/ HTTP/1.1" 404 3340
+Not Found: /create_client/
+"GET /create_client/ HTTP/1.1" 404 3340
+Internal Server Error: /create_client/2
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 32, in create_client
+    client.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+"GET /create_client/2 HTTP/1.1" 500 153944
+Watching for file changes with StatReloader
+Internal Server Error: /create_client/2
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 32, in create_client
+    client.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: apphw_client.registration_date
+"GET /create_client/2 HTTP/1.1" 500 154302
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /create_client/2 HTTP/1.1" 200 270
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 52, in client_list
+    return render(request, 'client_list.html', {'clients': clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'create_client' with no arguments not found. 1 pattern(s) tried: ['create_client/(?P<count>[0-9]+)\\Z']
+"GET / HTTP/1.1" 500 128303
+"GET / HTTP/1.1" 200 1966
+"GET /create_client/1 HTTP/1.1" 200 270
+"GET / HTTP/1.1" 200 2517
+"GET /delete_client/2/ HTTP/1.1" 200 703
+"POST /delete_client/2/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1873
+"GET /delete_client/1/ HTTP/1.1" 200 703
+"POST /delete_client/1/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 1242
+"GET / HTTP/1.1" 200 1289
+"GET /view_client/3/ HTTP/1.1" 200 740
+"GET /update_client/3/ HTTP/1.1" 200 1242
+"GET /create_client/1 HTTP/1.1" 200 270
+"GET /create_client/1 HTTP/1.1" 200 270
+Not Found: /create_client/
+"GET /create_client/ HTTP/1.1" 404 3328
+"GET /create_client/50 HTTP/1.1" 200 271
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 32566
+"GET /view_client/51/ HTTP/1.1" 200 740
+"GET /delete_client/25/ HTTP/1.1" 200 602
+"GET / HTTP/1.1" 200 32566
+"GET /view_client/14/ HTTP/1.1" 200 730
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 32566
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 84, in input_image
+    return render(request, '',{})
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\base.py", line 23, in get_template
+    contents = self.get_contents(origin)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\cached.py", line 26, in get_contents
+    return origin.loader.get_contents(origin)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\filesystem.py", line 22, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\user\\Desktop\\Django\\django_venv\\Lib\\site-packages\\django\\contrib\\admin\\templates'
+"GET /input_image HTTP/1.1" 500 112911
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 32566
+"GET /input_image HTTP/1.1" 200 597
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 32566
+"GET /input_image HTTP/1.1" 200 534
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 80, in input_image
+    form = ImageForm()
+           ^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"POST /input_image HTTP/1.1" 500 74594
+"GET /input_image HTTP/1.1" 200 528
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 80, in input_image
+    form = ImageForm()
+           ^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"POST /input_image HTTP/1.1" 500 74594
+"GET /input_image HTTP/1.1" 200 528
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 80, in input_image
+    form = ImageForm()
+           ^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"POST /input_image HTTP/1.1" 500 74594
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 84, in input_image
+    form = ImageForm()
+           ^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"GET /input_image HTTP/1.1" 500 73491
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 84, in input_image
+    form = ImageForm()
+           ^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"GET /input_image HTTP/1.1" 500 73491
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 84, in input_image
+    form = ImageForm()
+           ^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"GET /input_image HTTP/1.1" 500 73491
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /input_image HTTP/1.1" 200 1275
+"POST /input_image HTTP/1.1" 200 1275
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 1275
+"GET /input_image HTTP/1.1" 200 1275
+"POST /input_image HTTP/1.1" 200 1275
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /input_image HTTP/1.1" 200 1263
+"POST /input_image HTTP/1.1" 200 1263
+"GET / HTTP/1.1" 200 691
+"GET /create_client/1 HTTP/1.1" 200 270
+"GET / HTTP/1.1" 200 1296
+"GET /create_client/1 HTTP/1.1" 200 270
+"GET /create_client/10 HTTP/1.1" 200 271
+"GET / HTTP/1.1" 200 7844
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7844
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 91, in input_image
+    form = ProductForm()
+           ^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"GET /input_image HTTP/1.1" 500 73523
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 91, in input_image
+    form = ProductForm()
+           ^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"GET /input_image HTTP/1.1" 500 73660
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 91, in input_image
+    form = ProductForm()
+           ^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"GET /input_image HTTP/1.1" 500 73660
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 91, in input_image
+    form = ProductForm()
+           ^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"GET /input_image HTTP/1.1" 500 73660
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 91, in input_image
+    form = ProductForm()
+           ^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"GET /input_image HTTP/1.1" 500 73664
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7844
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 91, in input_image
+    form = ProductForm()
+           ^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+"GET /input_image HTTP/1.1" 500 73527
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 1263
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 1263
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7844
+"GET /input_image HTTP/1.1" 200 1097
+"POST /input_image HTTP/1.1" 200 1097
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /input_image HTTP/1.1" 200 1097
+"GET /input_image HTTP/1.1" 200 1097
+"GET /input_image HTTP/1.1" 200 1097
+"GET /input_image HTTP/1.1" 200 1097
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /input_image HTTP/1.1" 200 1097
+"GET /input_image HTTP/1.1" 200 1097
+"GET /input_image HTTP/1.1" 200 1097
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /input_image HTTP/1.1" 200 1097
+"GET /input_image HTTP/1.1" 200 1097
+"GET /input_image HTTP/1.1" 200 1097
+"GET /input_image HTTP/1.1" 200 1097
+"GET /input_image HTTP/1.1" 200 1097
+Watching for file changes with StatReloader
+"GET /input_image HTTP/1.1" 200 1097
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /input_image HTTP/1.1" 200 1264
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /input_image HTTP/1.1" 200 1249
+"POST /input_image HTTP/1.1" 200 1249
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 1249
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 1272
+"POST /input_image HTTP/1.1" 200 1272
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 1407
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 1407
+"POST /input_image HTTP/1.1" 200 1408
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 1408
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 1627
+"POST /input_image HTTP/1.1" 200 1642
+"POST /input_image HTTP/1.1" 200 1641
+"POST /input_image HTTP/1.1" 200 1641
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7844
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3497
+"GET /input_image HTTP/1.1" 200 1412
+"POST /input_image HTTP/1.1" 200 1640
+"POST /input_image HTTP/1.1" 200 1639
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\HW_proj\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\HW_proj\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7844
+"GET /input_image HTTP/1.1" 200 666
+"POST /input_image HTTP/1.1" 200 748
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 748
+"POST /input_image HTTP/1.1" 200 748
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 748
+"POST /input_image HTTP/1.1" 200 748
+"POST /input_image HTTP/1.1" 200 748
+"POST /input_image HTTP/1.1" 200 780
+"POST /input_image HTTP/1.1" 200 698
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /input_image HTTP/1.1" 200 1842
+"POST /input_image HTTP/1.1" 200 1594
+"POST /input_image HTTP/1.1" 200 1593
+"POST /input_image HTTP/1.1" 200 1593
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7844
+"GET /input_image HTTP/1.1" 200 1444
+"POST /input_image HTTP/1.1" 200 1592
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7844
+"GET /input_image HTTP/1.1" 200 1304
+"POST /input_image HTTP/1.1" 200 1352
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7844
+"GET /input_image HTTP/1.1" 200 1304
+Internal Server Error: /input_image
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table apphw_product has no column named image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 89, in input_image
+    product.save()
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table apphw_product has no column named image
+"POST /input_image HTTP/1.1" 500 154409
+Watching for file changes with StatReloader
+"GET /input_image HTTP/1.1" 200 1304
+"POST /input_image HTTP/1.1" 200 1352
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 691
+Not Found: /input_image
+"GET /input_image HTTP/1.1" 404 3679
+Not Found: /create_client/
+"GET /create_client/ HTTP/1.1" 404 3688
+"GET /create_client/10 HTTP/1.1" 200 271
+"GET / HTTP/1.1" 200 6690
+Not Found: /input_image
+"GET /input_image HTTP/1.1" 404 3679
+Not Found: /add_product/
+"GET /add_product/ HTTP/1.1" 404 3682
+Not Found: /add_product/
+"GET /add_product/ HTTP/1.1" 404 3682
+"GET /add_product HTTP/1.1" 200 1304
+"POST /add_product HTTP/1.1" 200 1371
+Not Found: /productû_äøûå
+"GET /product%D1%8B_%D0%B4%D1%88%D1%8B%D0%B5 HTTP/1.1" 404 3720
+"GET /products_list HTTP/1.1" 200 627
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /products_list HTTP/1.1" 200 1106
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /products_list HTTP/1.1" 200 1158
+"GET /products_list HTTP/1.1" 200 1262
+"GET / HTTP/1.1" 200 6690
+Not Found: /input_image
+"GET /input_image HTTP/1.1" 404 3679
+Not Found: /wqeqwe
+"GET /wqeqwe HTTP/1.1" 404 3664
+Internal Server Error: /products_list
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 85, in products_list
+    return render(request, 'products_list.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 1380, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{product.image}}' from '{{product.image}}'
+"GET /products_list HTTP/1.1" 500 165382
+Internal Server Error: /products_list
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 85, in products_list
+    return render(request, 'products_list.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '{{product.image}}' not found. '{{product.image}}' is not a valid view function or pattern name.
+"GET /products_list HTTP/1.1" 500 132546
+Internal Server Error: /products_list
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 85, in products_list
+    return render(request, 'products_list.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 1380, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''{product.image}'' from 'f'{product.image}''
+"GET /products_list HTTP/1.1" 500 166472
+Internal Server Error: /products_list
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 85, in products_list
+    return render(request, 'products_list.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '{product.image}' not found. '{product.image}' is not a valid view function or pattern name.
+"GET /products_list HTTP/1.1" 500 132498
+Internal Server Error: /products_list
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 85, in products_list
+    return render(request, 'products_list.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product.image' not found. 'product.image' is not a valid view function or pattern name.
+"GET /products_list HTTP/1.1" 500 132450
+Internal Server Error: /products_list
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 85, in products_list
+    return render(request, 'products_list.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product.image' not found. 'product.image' is not a valid view function or pattern name.
+"GET /products_list HTTP/1.1" 500 132450
+Internal Server Error: /products_list
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 85, in products_list
+    return render(request, 'products_list.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product.image' not found. 'product.image' is not a valid view function or pattern name.
+"GET /products_list HTTP/1.1" 500 132450
+"GET /products_list HTTP/1.1" 200 1376
+Not Found: /firefox_vasII0btnq.png
+"GET /firefox_vasII0btnq.png HTTP/1.1" 404 3712
+Not Found: /firefox_vasII0btnq.png
+"GET /firefox_vasII0btnq.png HTTP/1.1" 404 3712
+"GET /products_list HTTP/1.1" 200 1372
+"GET /products_list HTTP/1.1" 200 1372
+Not Found: /firefox_vasII0btnq.png
+"GET /firefox_vasII0btnq.png HTTP/1.1" 404 3712
+Not Found: /media/j1VJO1GENf.png
+"GET /media/j1VJO1GENf.png HTTP/1.1" 404 3706
+"GET /products_list HTTP/1.1" 200 1262

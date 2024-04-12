@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Client,Order, Product
-from .forms import ClientForm 
+from .forms import ClientForm,ProductForm
 from django.utils import timezone
+from faker import Faker
+from django.core.files.storage import FileSystemStorage
 
-
+fake = Faker()
 
 
 def ordered_products(request, client_id, period):
@@ -22,15 +24,15 @@ def get_period_start_date(period):
     else:
         return today
 
-def create_client(request):
-    if request.method == 'POST':
-        form = ClientForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('client_list')
-    else:
-        form = ClientForm()
-    return render(request, 'create_client.html', {'form': form})
+def create_client(request,count):
+    clients = []
+    for i in range(count):
+        client = Client(name = fake.name(), email = fake.email(),phone_number = fake.phone_number(), address = fake.address())
+        clients.append(client)
+        
+        client.save()
+    return render(request, 'create_client.html', {'count': count})
+
 
 def client_list(request):
     clients = Client.objects.all()
@@ -51,9 +53,33 @@ def update_client(request, client_id):
         form = ClientForm(instance=client)
     return render(request, 'update_client.html', {'form': form, 'client': client})
 
+
+
 def delete_client(request, client_id):
     client = get_object_or_404(Client, id=client_id)
     if request.method == 'POST':
         client.delete()
         return redirect('client_list')
     return render(request, 'delete_client.html', {'client': client})
+
+
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            price = form.cleaned_data['price']
+            quantity = form.cleaned_data['quantity']
+            image = form.cleaned_data['image']
+            product = Product(name = name,description = description, price=price,quantity=quantity ,image=f'./media/{image.name}')
+            product.save()
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+    else:
+        form = ProductForm()
+    return render(request, 'input_image.html', {'form' : form})
+
+def products_list(request):
+    products = Product.objects.all()
+    return render(request, 'products_list.html', {'products': products})

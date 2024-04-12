@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данные клиента</title>
+</head>
+<body>
+    <h1>Данные клиента</h1>
+    <p><strong>Name:</strong> {{ client.name }}</p>
+    <p><strong>Email:</strong> {{ client.email }}</p>
+    <p><strong>Phone Number:</strong> {{ client.phone_number }}</p>
+    <p><strong>Address:</strong> {{ client.address }}</p>
+    <p><strong>Registration Date:</strong> {{ client.registration_date }}</p>
+    <a href="{% url 'update_client' client.id %}">Обновить</a>
+    <a href="{% url 'delete_client' client.id %}">Удалить</a>
+    <a href="{% url 'client_list' %}">Обратно к листу клиентов</a>
+</body>
+</html>
