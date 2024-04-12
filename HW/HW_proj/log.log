@@ -2806,3 +2806,87 @@ Not Found: /input_image
 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
 "GET /admin/apphw/client/ HTTP/1.1" 200 16946
 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 6766
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3679
+"GET /admin/ HTTP/1.1" 200 7499
+"GET /admin/auth/user/add/ HTTP/1.1" 200 12376
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/auth/user/add/ HTTP/1.1" 200 12734
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/auth/user/add/ HTTP/1.1" 200 12651
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/auth/user/add/ HTTP/1.1" 302 0
+"GET /admin/auth/user/2/change/ HTTP/1.1" 200 24876
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+"POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+"GET /admin/auth/user/2/change/ HTTP/1.1" 200 24895
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/ HTTP/1.1" 200 8527
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/add/ HTTP/1.1" 200 14623
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/product/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6949
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/apphw/product/add/?_to_field=id&_popup=1 HTTP/1.1" 200 403
+"GET /static/admin/js/popup_response.js HTTP/1.1" 200 551
+"POST /admin/apphw/order/add/ HTTP/1.1" 302 0
+"GET /admin/apphw/order/ HTTP/1.1" 200 11221
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/1/change/ HTTP/1.1" 200 15466
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/ HTTP/1.1" 200 10827
+"GET /admin/apphw/product/ HTTP/1.1" 200 10640
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/product/add/ HTTP/1.1" 200 11892
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/apphw/product/add/ HTTP/1.1" 302 0
+"GET /admin/apphw/product/ HTTP/1.1" 200 11294
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/ HTTP/1.1" 200 10827
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/add/ HTTP/1.1" 200 14707
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/apphw/order/add/ HTTP/1.1" 200 14931
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/apphw/order/add/ HTTP/1.1" 302 0
+"GET /admin/apphw/order/ HTTP/1.1" 200 12049
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/client/ HTTP/1.1" 200 16946
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/ HTTP/1.1" 200 11648
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\admin.py changed, reloading.
+Watching for file changes with StatReloader
