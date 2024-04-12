@@ -32,3 +32,4 @@ class Order(models.Model):
 
     def __str__(self):
         return f"Заказ #{self.id} от {self.client}"
+    

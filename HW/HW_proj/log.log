@@ -2066,3 +2066,743 @@ Not Found: /firefox_vasII0btnq.png
 Not Found: /media/j1VJO1GENf.png
 "GET /media/j1VJO1GENf.png HTTP/1.1" 404 3706
 "GET /products_list HTTP/1.1" 200 1262
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 6690
+Not Found: /input_image
+"GET /input_image HTTP/1.1" 404 3679
+"GET /products_list HTTP/1.1" 200 1326
+"GET /products_list HTTP/1.1" 200 1354
+"GET /products_list HTTP/1.1" 200 1354
+"GET /products_list HTTP/1.1" 200 1354
+"GET /products_list HTTP/1.1" 200 1354
+"GET /products_list HTTP/1.1" 200 1354
+"GET /products_list HTTP/1.1" 200 1344
+"GET /products_list HTTP/1.1" 200 1390
+Watching for file changes with StatReloader
+"GET /products_list HTTP/1.1" 200 1390
+Watching for file changes with StatReloader
+"GET /products_list HTTP/1.1" 200 1670
+Watching for file changes with StatReloader
+"GET /products_list HTTP/1.1" 200 1586
+Not Found: /.../media/firefox_AFUCwJooyU.png
+"GET /.../media/firefox_AFUCwJooyU.png HTTP/1.1" 404 3742
+"GET /products_list HTTP/1.1" 200 1592
+Not Found: /apphw/media/firefox_AFUCwJooyU.png
+"GET /apphw/media/firefox_AFUCwJooyU.png HTTP/1.1" 404 3748
+"GET /products_list HTTP/1.1" 200 1592
+Not Found: /apphw/media/firefox_AFUCwJooyU.png
+"GET /apphw/media/firefox_AFUCwJooyU.png HTTP/1.1" 404 3748
+"GET /products_list HTTP/1.1" 200 1592
+Not Found: /apphw/media/firefox_AFUCwJooyU.png
+"GET /apphw/media/firefox_AFUCwJooyU.png HTTP/1.1" 404 3748
+"GET /products_list HTTP/1.1" 200 1592
+Not Found: /apphw/media/firefox_AFUCwJooyU.png
+"GET /apphw/media/firefox_AFUCwJooyU.png HTTP/1.1" 404 3748
+"GET /products_list HTTP/1.1" 200 1592
+Not Found: /apphw/media/firefox_AFUCwJooyU.png
+"GET /apphw/media/firefox_AFUCwJooyU.png HTTP/1.1" 404 3748
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 6690
+"GET /products_list HTTP/1.1" 200 1686
+"GET /products_list HTTP/1.1" 200 1686
+"GET /products_list HTTP/1.1" 200 1686
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 6690
+Internal Server Error: /products_list
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\HW\HW_proj\apphw\views.py", line 85, in products_list
+    return render(request, 'products_list.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':///C:/Users/user/Desktop/Django/HW/HW_proj/apphw/media/{{ product.image' from 'file:///C:/Users/user/Desktop/Django/HW/HW_proj/apphw/media/{{ product.image'
+"GET /products_list HTTP/1.1" 500 163070
+"GET /products_list HTTP/1.1" 200 1686
+"GET / HTTP/1.1" 200 6690
+"GET /products_list HTTP/1.1" 200 1610
+Not Found: /firefox_vasII0btnq.png
+Not Found: /media/j1VJO1GENf.png
+"GET /media/j1VJO1GENf.png HTTP/1.1" 404 3706
+"GET /firefox_vasII0btnq.png HTTP/1.1" 404 3712
+"GET /products_list HTTP/1.1" 200 1686
+"GET /products_list HTTP/1.1" 200 1686
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+Watching for file changes with StatReloader
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1566
+Not Found: /firefox_AFUCwJooyU.png
+"GET /firefox_AFUCwJooyU.png HTTP/1.1" 404 3712
+"GET /products_list HTTP/1.1" 200 1566
+Not Found: /firefox_AFUCwJooyU.png
+"GET /firefox_AFUCwJooyU.png HTTP/1.1" 404 3712
+"GET /products_list HTTP/1.1" 200 1566
+Not Found: /firefox_AFUCwJooyU.png
+"GET /firefox_AFUCwJooyU.png HTTP/1.1" 404 3712
+"GET /products_list HTTP/1.1" 200 1566
+Not Found: /firefox_AFUCwJooyU.png
+"GET /firefox_AFUCwJooyU.png HTTP/1.1" 404 3712
+"GET /products_list HTTP/1.1" 200 1566
+Not Found: /firefox_AFUCwJooyU.png
+"GET /firefox_AFUCwJooyU.png HTTP/1.1" 404 3712
+"GET /products_list HTTP/1.1" 200 1568
+Not Found: /.firefox_AFUCwJooyU.png
+"GET /.firefox_AFUCwJooyU.png HTTP/1.1" 404 3715
+"GET /products_list HTTP/1.1" 200 1568
+Not Found: /.firefox_AFUCwJooyU.png
+"GET /.firefox_AFUCwJooyU.png HTTP/1.1" 404 3715
+"GET /products_list HTTP/1.1" 200 1568
+Not Found: /.firefox_AFUCwJooyU.png
+"GET /.firefox_AFUCwJooyU.png HTTP/1.1" 404 3715
+"GET /products_list HTTP/1.1" 200 1572
+Not Found: /...firefox_AFUCwJooyU.png
+"GET /...firefox_AFUCwJooyU.png HTTP/1.1" 404 3721
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+Watching for file changes with StatReloader
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+"GET /products_list HTTP/1.1" 200 1674
+C:\Users\user\Desktop\Django\HW\HW_proj\HW_proj\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+Watching for file changes with StatReloader
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 5944
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/auth/user/ HTTP/1.1" 200 11916
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /admin/auth/group/ HTTP/1.1" 200 7783
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/auth/group/add/ HTTP/1.1" 200 12862
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+"GET /admin/ HTTP/1.1" 200 5944
+"GET /admin/auth/user/ HTTP/1.1" 200 11916
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/ HTTP/1.1" 200 5944
+"GET /admin/auth/user/ HTTP/1.1" 200 11916
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/auth/user/?_facets=True HTTP/1.1" 200 12323
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/img/icon-hidelink.svg HTTP/1.1" 200 784
+"GET /admin/auth/user/? HTTP/1.1" 200 11916
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/auth/user/?_facets=True HTTP/1.1" 200 12323
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 6790
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 200 7499
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/apphw/client/ HTTP/1.1" 200 16994
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/apphw/order/ HTTP/1.1" 200 8527
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/add/ HTTP/1.1" 200 14727
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/apphw/product/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6949
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/client/6/change/?_to_field=id HTTP/1.1" 200 12215
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/add/ HTTP/1.1" 200 14727
+"POST /admin/apphw/order/add/ HTTP/1.1" 200 14951
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/apphw/order/add/ HTTP/1.1" 302 0
+"GET /admin/apphw/order/ HTTP/1.1" 200 11242
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/product/ HTTP/1.1" 200 11062
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/ HTTP/1.1" 200 10840
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/1/change/ HTTP/1.1" 200 15555
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/client/ HTTP/1.1" 200 16994
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/ HTTP/1.1" 200 10840
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /create_client/10 HTTP/1.1" 200 271
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+Watching for file changes with StatReloader
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7499
+"GET /admin/apphw/product/ HTTP/1.1" 200 8541
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/product/add/ HTTP/1.1" 200 11892
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/apphw/product/add/ HTTP/1.1" 302 0
+"GET /admin/apphw/product/add/ HTTP/1.1" 200 12178
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/apphw/product/add/ HTTP/1.1" 302 0
+"GET /admin/apphw/product/ HTTP/1.1" 200 11301
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/order/ HTTP/1.1" 200 8527
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Internal Server Error: /admin/apphw/order/add/
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1871, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 363, in __init__
+    self.instance = opts.model()
+                    ^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 535, in __init__
+    val = field.get_default()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1021, in get_default
+    return self._get_default()
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: Order.get_sum() missing 1 required positional argument: 'self'
+"GET /admin/apphw/order/add/ HTTP/1.1" 500 136557
+"GET /admin/apphw/order/ HTTP/1.1" 200 8527
+Internal Server Error: /admin/apphw/order/add/
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1871, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 363, in __init__
+    self.instance = opts.model()
+                    ^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 535, in __init__
+    val = field.get_default()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1021, in get_default
+    return self._get_default()
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: Order.get_sum() missing 1 required positional argument: 'self'
+"GET /admin/apphw/order/add/ HTTP/1.1" 500 136557
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /admin/apphw/order/add/
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1871, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 363, in __init__
+    self.instance = opts.model()
+                    ^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 535, in __init__
+    val = field.get_default()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1021, in get_default
+    return self._get_default()
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: Order.get_sum() missing 1 required positional argument: 'self'
+"GET /admin/apphw/order/add/ HTTP/1.1" 500 136525
+"GET /admin/apphw/order/ HTTP/1.1" 200 8527
+Internal Server Error: /admin/apphw/order/add/
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1871, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 363, in __init__
+    self.instance = opts.model()
+                    ^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 535, in __init__
+    val = field.get_default()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1021, in get_default
+    return self._get_default()
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: Order.get_sum() missing 1 required positional argument: 'self'
+"GET /admin/apphw/order/add/ HTTP/1.1" 500 136557
+"GET /admin/apphw/order/ HTTP/1.1" 200 8527
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/apphw/order/ HTTP/1.1" 200 8527
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Internal Server Error: /admin/apphw/order/add/
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\contrib\admin\options.py", line 1871, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\forms\models.py", line 363, in __init__
+    self.instance = opts.model()
+                    ^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\base.py", line 535, in __init__
+    val = field.get_default()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Django\django_venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1021, in get_default
+    return self._get_default()
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: Order.get_sum() missing 1 required positional argument: 'self'
+"GET /admin/apphw/order/add/ HTTP/1.1" 500 136557
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\user\Desktop\Django\HW\HW_proj\apphw\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 691
+Not Found: /input_image
+"GET /input_image HTTP/1.1" 404 3679
+"GET /create_client/10 HTTP/1.1" 200 271
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7499
+"GET /admin/apphw/order/ HTTP/1.1" 200 8527
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/apphw/client/ HTTP/1.1" 200 16946
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546

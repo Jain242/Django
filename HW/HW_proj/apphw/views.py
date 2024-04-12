@@ -72,7 +72,7 @@ def add_product(request):
             price = form.cleaned_data['price']
             quantity = form.cleaned_data['quantity']
             image = form.cleaned_data['image']
-            product = Product(name = name,description = description, price=price,quantity=quantity ,image=f'./media/{image.name}')
+            product = Product(name = name,description = description, price=price,quantity=quantity ,image=f'{image.name}')
             product.save()
             fs = FileSystemStorage()
             fs.save(image.name, image)
