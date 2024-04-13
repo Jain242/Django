@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Client,Order, Product
-from .forms import ClientForm,ProductForm
+from .forms import ClientForm,ProductForm, OrderForm, UserLoginForm
 from django.utils import timezone
 from faker import Faker
 from django.core.files.storage import FileSystemStorage
+from random import randint
+from django.contrib.auth import authenticate, login
 
 fake = Faker()
 
@@ -24,10 +26,41 @@ def get_period_start_date(period):
     else:
         return today
 
+def make_order(request):
+    form = {'Вы вошли'}
+    if request.method == 'POST':
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            client = form.cleaned_data['client']
+
+            products = form.cleaned_data['products']
+            print(products.price)
+            quanty_products = form.cleaned_data['quanty_products']
+            order = Order(client = client, products = products,quanty_products=quanty_products,total_amount = products.price*quanty_products)
+           
+            order.save()
+            redirect('client_list' )
+        else:
+            form = OrderForm()
+    return render(request, 'make_order.html',{'form': form})
+
+def update_client(request, client_id):
+    client = get_object_or_404(Client, id=client_id)
+    if request.method == 'POST':
+        form = ClientForm(request.POST, instance=client)
+        if form.is_valid():
+            fs = FileSystemStorage()
+            fs.save(client)
+            return redirect('client_list')
+    else:
+        form = ClientForm(instance=client)
+    return render(request, 'update_client.html', {'form': form, 'client': client})
+
+
 def create_client(request,count):
     clients = []
     for i in range(count):
-        client = Client(name = fake.name(), email = fake.email(),phone_number = fake.phone_number(), address = fake.address())
+        client = Client(login = fake.first_name()+ str(randint(1,100)),password = fake.password(length=10, special_chars=True, digits=True, upper_case=True, lower_case=True),name = fake.name(), email = fake.email(),phone_number = fake.phone_number(), address = fake.address())
         clients.append(client)
         
         client.save()
@@ -42,18 +75,6 @@ def view_client(request, client_id):
     client = get_object_or_404(Client, id=client_id)
     return render(request, 'view_client.html', {'client': client})
 
-def update_client(request, client_id):
-    client = get_object_or_404(Client, id=client_id)
-    if request.method == 'POST':
-        form = ClientForm(request.POST, instance=client)
-        if form.is_valid():
-            form.save()
-            return redirect('client_list')
-    else:
-        form = ClientForm(instance=client)
-    return render(request, 'update_client.html', {'form': form, 'client': client})
-
-
 
 def delete_client(request, client_id):
     client = get_object_or_404(Client, id=client_id)
@@ -61,6 +82,13 @@ def delete_client(request, client_id):
         client.delete()
         return redirect('client_list')
     return render(request, 'delete_client.html', {'client': client})
+
+
+def orders(request):
+    orders = Order.objects.all()
+    return render(request, 'orders.html', {'orders': orders})
+
+
 
 
 def add_product(request):
@@ -83,3 +111,21 @@ def add_product(request):
 def products_list(request):
     products = Product.objects.all()
     return render(request, 'products_list.html', {'products': products})
+
+
+def login_user(request):
+    if request.method == 'POST':
+        form = UserLoginForm(request.POST)
+        if form.is_valid():
+            login = form.cleaned_data['login']
+            password = form.cleaned_data['password']
+            client = Client.objects.filter(login = login,password = password)
+            if client:
+                 return redirect('make_order')
+            else:
+                error_message = "Invalid username or password."
+                return render(request, 'login.html', {'form': form, 'error_message': error_message})
+    else:
+        form = UserLoginForm()
+    
+    return render(request, 'login.html', {'form': form})

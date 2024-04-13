@@ -2,6 +2,8 @@ import datetime
 from django.db import models
 
 class Client(models.Model):
+    login = models.CharField(max_length=30)
+    password = models.CharField(max_length=30)
     name = models.CharField(max_length=50)
     email = models.EmailField()
     phone_number = models.CharField(max_length=15)
@@ -26,10 +28,13 @@ class Product(models.Model):
 
 class Order(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
-    products = models.ManyToManyField(Product)
+    products = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quanty_products = models.IntegerField()
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)
     order_date = models.DateTimeField(auto_now_add=True )
 
+
+
     def __str__(self):
-        return f"Заказ #{self.id} от {self.client}"
-    
+        return f' { self.order_date}'
+

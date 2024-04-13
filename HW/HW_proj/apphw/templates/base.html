@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
     <title>{% block title %}
 
-        {% end block title %}</title>
+        {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 </head>
 <body>
-    <a href="about">Главная</a>
-    <a href="about">Заказы</a>
+     <a href={% url 'client_list' %}>Главная</a>
+    <a href="{% url 'orders' %}">Заказы</a>
     {% block content %}
 
-    {% end block content %}
+    {% endblock %}
     
 </body>
+<footer>
+
+</footer>
 </html>

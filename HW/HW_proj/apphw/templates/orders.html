@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Список клиентов
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Список заказов</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Номер заказа</th>
+                    <th>Клиент</th>
+                    <th>Дата оформления</th>
+                    <th>Общая сумма</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                    <tr>
+                        <td>{{ order.id }}</td>
+                        <td>{{ order.client.name }}</td>
+                        <td>{{ order.order_date }}</td>
+                        <td>{{ order.total_amount }}</td>
+                        <td>
+                            <a href="#">Просмотр</a>
+                            <a href="#">Редактировать</a>
+                            <a href="#">Удалить</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href={% url 'make_order' %}>Создать заказ</a>
+    </div>
+{% endblock %}

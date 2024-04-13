@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Список клиентов
+{% endblock %}
+
+{% block content %}
+
+<form  method="post">
+    {% csrf_token %}
+    <!-- Добавьте поля для выбора товаров и их количества -->
+    {{form.as_p}}
+    <button type="submit">Оформить заказ</button>
+</form>
+{% endblock %}
